@@ -1,9 +1,171 @@
+/* body{
+    margin: 124px;
+}
 header{
-    background-image: url(hautdepage.png);
+    border: 2px solid black;
+    background-image: url(/Toute\ les\ images/hautdepage.png);
 }
-p {
+/* #IncritConnect{ */
+    /* text-align: center;} */
+/* .imagedefond{
+    background-image:url("") ;
+}
+.element1{
+    text-align: end;
+    width: 100px;
+    height: 25px;
+} */
+/* #menu2{
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    /* border: 2px; 
+ }
+#menu1{
+    display: flex;
+    justify-content: end;
+}
+#rch{
+    justify-content: end;
+}
+#intronutri{
+    font-size: 30px ;
+} */
+/* h1{
+    text-align:start;
+    color: black;
+}
+#intronutri{
+    margin-left: 50px;
+}
+#coprs1{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+}
+ .element2{
+    
+    width: 100px;
+    height: 100px;
     text-align: center;
+    background-color: red;
 }
-a {
-    color: red;
+#corpnutri{
+    align-items: center;
+}
+#imagenutri{
+    display: block;
+} */
+/* #photo{
+    height: 400px;
+    width: 600px;
+
+}
+#imagenutri{
+    justify-content: baseline;
+    display: flex;
+} */
+/* #paraphintronutri{
+    display: block;
+    justify-content: space-between;
+    font-size: 35px;
+    height: 400px;
+    /* background-color: red; */
+    /* margin-left: 50px;
+}
+.elementCadre{
+    /* background-color: aquamarine; */
+    /* object-fit: scale-down;
+    /* background-image: url(/Toute\ les\ images/Nutrition.png); */
+    /* display: flex;
+    height: 400px;
+    width: 6000px;
+    justify-content: center;
+    align-items: center; 
+       
+}
+.elementCadre :hover{
+    flex: 7;
+}
+.elementCadre {
+
+}  */ 
+/* .elementCadre:hover .element2{
+    display: block;
+}
+#eProg{ display: none;
+    height: 200px;
+    width: 3000px;
+}
+#eProd{ display: none;
+    height: 200px;
+    width: 3000px;
+}
+#eId{ display: none;
+    height: 200px;
+    width: 3000px;
+} */ 
+/* body{
+    display: block;
+    width: 1024;
+    margin-left: auto;
+    margin-right: auto ;
+} */
+#img{
+    display: flexbox;
+    height: 60px;
+    width: 60px;
+    /* position: absolute; */
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+/* display: block; */
+height: 200px;
+width: 1024px;
+/* background-color: blue; */
+    background-image: url(/Toute\ les\ images/hautpage.png);
+}
+#menu1{
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}
+#InscritConnect{
+    display: block;
+    border: 2px solid black;
+    margin-right: 100px;
+}
+#Recherche{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+#menu2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    background-color: green;
+    height: 40px;
+    border: 2px solid white;
+    align-items: center;
+}
+#nut{
+    display: block;
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+#intronutri{
+    display: block;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    padding-left: 75px;
+}
+body{
+    display: block;
 }
