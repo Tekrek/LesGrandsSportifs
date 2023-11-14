@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family:MaPolice;
+    src: url(Agbalumo-Regular.ttf);
+}
+
+h1{
+    color: blue;
+    font-family:MaPolice;
+    text-align: center;
+}
+h1{
+    border: 5px groove red;
+}
+body{
+    background-color: #b5c3cd;
+}
+
+#vestiaire{
+    justify-content: center;
+}
+
+div{
+    align-self:nowrap;
+}
+
+#filtres{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.illustration{width: 100%;height: 300px;}
+.banière{width: 49.8%;height: 250px;}
+
+#rechercher{
+    justify-content: flex-end;
+    font-family: MaPolice;
+}
+
+/* Mon header  */
+.header{
+    width: 35px;height: 35px;
+}
+
+header{font-family: MaPolice; text-align: center;color: red;
+display: flex;
+        justify-content: space-around;
+    background-color: rgba(110, 227, 56, 0.646);}
