@@ -1,3 +1,4 @@
+
 @font-face {
     font-family:MaPolice;
     src: url(Agbalumo-Regular.ttf);
@@ -7,32 +8,28 @@ body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
     color: white;
     font-size: 50PX;
+    font-family: MaPolice;
+    text-align: center;
 }
 
 h1{
     color: red;
-    font-family:MaPolice;
+    font-family: MaPolice;
     text-align: center;
     font-size: 100PX;
-    
 }
 
-
-.top{width: 750px; height: 750px;}
-#top{justify-content: space-between;display: flex;}
-
-figcaption{font-family: MaPolice;color: yellow;text-align: center;}
-
-#rechercher{font-family: MaPolice; font-size: 40px;
-
-}
-
-footer{
-    display: flex; justify-content: space-around;
+#test-radius{
+    width: 635px;
+    height: 100px;
+    background-color: rgb(242, 255, 0);
+    text-align: center;
+    color: black;
+    font-family: MaPolice;
 }
 
 .im{width: 200px;height: 150px;}
 
-#quantités{
-    font-size: 40px;
+footer{
+    display: flex; justify-content: space-around;
 }
