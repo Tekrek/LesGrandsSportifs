@@ -173,6 +173,8 @@ width: 1024px; */
     border: 2px solid white;
     align-items: center;
     font-size: 20px;
+    -webkit-text-stroke: 0.7px black;
+    /* color: black; */
 }
 #nut, #ekip{
     display: block;
@@ -316,6 +318,7 @@ width: 1024px; */
     width: 490px;
     height: 400px;
     margin-right: auto;
+     /* margin-left: auto; */
     background-image: url(/Toute\ les\ images/contact.png);
     text-align: center;
     justify-content: center;
@@ -336,4 +339,11 @@ body{
     color: white;
     background-size:contain;
     background-attachment: fixed;
+}
+.ele3, h1 {
+    -webkit-text-stroke: 1px black;
+} 
+#rej{
+    margin-left: auto;
+    margin-left: auto;
 }
