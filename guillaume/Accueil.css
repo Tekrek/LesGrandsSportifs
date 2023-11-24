@@ -1,0 +1,76 @@
+header{
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-image: url(../Images/pelouse.jpg);
+    height: 200px; 
+    font-family: MaPolice;
+    font-size: 50px;
+}
+
+a{color: white;}
+
+.ballon{height: 70px;W: 70px;}
+
+
+@font-face {
+    font-family:MaPolice;
+    src: url(Agbalumo-Regular.ttf);
+}
+
+body{
+    background-image: url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
+    color: white;
+    background-size: cover;
+    font-family: MaPolice;
+    font-size:50px;
+}
+
+
+figcaption{text-align:center}
+
+.accueil{display: flex; justify-content: space-around;}
+.img{
+    width: 1840px;height: 1000px;
+}
+.img2{
+    width: 3680px;
+}
+
+H1{color: black; font-size: 100px;text-align: center;border: double;
+    background: linear-gradient(to right, #A0342F, yellow);
+    border-radius: 50px;  
+}
+
+#image1{
+        width: 1840px;
+        height: 100px;
+        background-image: linear-gradient(to right, white, rgb(255, 0, 0));
+        text-align: center;
+        color: black;
+        font-family: MaPolice;
+}
+
+#image2{
+    width: 1840px;
+    height: 100px;
+    background-image: linear-gradient(to right, white, rgb(0, 255, 13));
+    text-align: center;
+    color: black;
+    font-family: MaPolice;
+}
+
+#image3{
+    width: 3680px;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 128, 0));
+    text-align: center;
+    color: black;
+    font-family: MaPolice;
+}
+
+footer{
+    display: flex; justify-content: space-around;
+}
+
+.im{width: 200px;height: 150px;}

@@ -7,6 +7,7 @@ body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
     color: white;
     font-size: 50PX;
+    background-size: cover;
 }
 
 h1{
@@ -18,8 +19,8 @@ h1{
 }
 
 
-.top{width: 900px; height: 500px;}
-#top{justify-content: space-between;display: flex;}
+.top{width: 500px; height: 500px;}
+#top{justify-content: space-around;display: flex;}
 
 figcaption{font-family: MaPolice;color: yellow;text-align: center;}
 
@@ -36,4 +37,5 @@ footer{
 #quantités{
     font-size: 40px;
 }
+
 
