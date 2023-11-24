@@ -44,7 +44,53 @@ p {
     font-size: 20px;
 }
 
-#accueil {
-    display: flex;
-    margin : 0px 10px;
+#besoins_connus {
+    color: white;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 520px;
 }
+
+#besoins_finaux {
+    color: white;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    border: solid 1px white;
+    margin: 10px 500px;
+}
+
+#GLucides, #Lipides, #Protéines, #Calories {
+    background-color: transparent;
+    color: white;
+}
+
+#Frequence_sportive {
+    display: none;
+    text-align: center;
+}
+
+#pourcentages {
+    display: none;
+    text-align: center;
+}
+
+
+#Texte_Frequence, #Texte_Pourcentage, #resultatIMG, #resultatMaintenance {
+    display: none;
+}
+
+#calcul_besoins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
