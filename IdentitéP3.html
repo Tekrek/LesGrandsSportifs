@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identité Page 3</title>
+    <link rel="stylesheet" href="IdentitéP3.css">
+</head>
+
+<body>
+    <div id="image_de_fond">
+        <div class="feature"></div>
+    </div>
+
+    <header>En-tête</header>
+    <h2>Identité</h2>
+    <br>
+    <p>Vos besoins caloriques journaliers :</p>
+    <select id="besoins_caloriques" onchange="tableau()" required>
+        <option value="" selected>Choisir: </option>
+        <option value="Je_les_connais">Je les connais</option>
+        <option value="Je_les_calcule">Je les calcule</option>
+    </select>
+    <main>
+        <div id="besoins_connus">
+            <br>
+            <table>
+                <tr>
+                    <td>Glucides</td>
+                    <td>
+                        <label for="Glucides">
+                            <input type="text" id="GLucides" placeholder="(en grammes/jour)">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lipides</td>
+                    <td>
+                        <label for="Lipides">
+                            <input type="text" id="Lipides" placeholder="(en grammes/jour)">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Protéines</td>
+                    <td>
+                        <label for="Protéines">
+                            <input type="text" id="Protéines" placeholder="(en grammes/jour)">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>
+                        <label for="Calories">
+                            <input type="text" id="Calories" placeholder="(en kcal/jour)">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="calcul_besoins">
+            <p id="Texte_Frequence" onchange="FrequenceSportive()">Votre fréquence sportive hebdomadaire:</p>
+            <select id="Frequence_sportive" onchange="FrequenceSportive()">
+                <option value="choixA" id="choixA">Peu ou pas d'exercice/sport par semaine
+                </option>
+
+                <option value="choixB" id="choixB">1 ou 2 séance(s) d'exercices/sport par semaine
+                </option>
+
+                <option value="choixC" id="choixC">Entre 3 et 5 séances d'exercices/sport par semaine
+                </option>
+
+                <option value="choixD" id="choixD">Entre 6 et 7 séances d'exercices/sport par semaine
+                </option>
+
+                <option value="choixE" id="choixE">>7 séances d'exercices/sport par semaine
+                </option>
+            </select>
+
+            <p id="Texte_Pourcentage">Votre pourcentage:</p>
+            <select id="pourcentages">
+                <option value="choix1">5%</option>
+                <option value="choix2">10%</option>
+                <option value="choix3">15%</option>
+                <option value="choix4">20%</option>
+                <option value="choix5">25%</option>
+            </select>
+
+            <!-- <div id="besoins_finaux"> -->
+
+            <!-- <p>Vos besoins caloriques totaux :</p>
+                <table>
+                    <tr>
+                        <td>Glucides</td>
+                        <td input type="text" id="GLucides"></td>
+                    </tr>
+                    <tr>
+                        <td>Lipides</td>
+                        <td input type="text" id="Lipides"></td>
+                    </tr>
+                    <tr>
+                        <td>Protéines</td>
+                        <td input type="text" id="Protéines"></td>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td input type="text" id="Calories"></td>
+                    </tr>
+                </table> -->
+
+            <p id="resultatIMG" onchange="calculerIMG()"></p>
+            <p id="resultatMaintenance" onchange="calculerIMG()"></p>
+
+
+        </div>
+
+        </div>
+
+    </main>
+    <br>
+    <input type="button" id="retour" value="Retour" onclick="window.location.href = 'IdentitéP2.html';">
+    <input type="button" id="suivant" value="Suivant">
+    <script src="IdentitéP3.js" type="text/javascript"></script>
+</body>
+
+</html>

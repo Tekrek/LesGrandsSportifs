@@ -1,0 +1,96 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    width: cover;
+    height: 50px;
+    font-size: 30px;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#image_de_fond {
+    background-image: url("Toute_les_images/MicrosoftTeams-image\ \(18\).png");
+    width: 100%;
+    height: 118vh;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.feature {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+#besoins_connus {
+    color: white;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 520px;
+}
+
+#besoins_finaux {
+    color: white;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    border: solid 1px white;
+    margin: 10px 500px;
+}
+
+#GLucides, #Lipides, #Protéines, #Calories {
+    background-color: transparent;
+    color: white;
+}
+
+#Frequence_sportive {
+    display: none;
+    text-align: center;
+}
+
+#pourcentages {
+    display: none;
+    text-align: center;
+}
+
+
+#Texte_Frequence, #Texte_Pourcentage, #resultatIMG, #resultatMaintenance {
+    display: none;
+}
+
+#calcul_besoins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
