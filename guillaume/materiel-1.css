@@ -8,8 +8,8 @@ h1{
     color: red;
     font-family:MaPolice;
     text-align: center;
-    font-size: 100PX;
-    
+    font-size: 150PX;
+    background-image: url(/Images/terrain\ tennis.jpg);
 }
 
 h2{
@@ -17,11 +17,13 @@ h2{
     font-family:MaPolice;
     text-align: center;
     font-size: 70PX;
+    background-image:url(/Images/terrain\ tennis.jpg);
     
 }
 
 body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
+    background-size: cover;
     color: white;
     font-size: 50PX;
 }
@@ -34,7 +36,7 @@ body{
 }
 .abc{width: 10px;}
 
-.banière{width: 1192px;height: 400px;}
+.banière{width: 1192px;height: 250px;}
 
 #rechercher{
     font-family: MaPolice;

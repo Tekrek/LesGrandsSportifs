@@ -10,10 +10,11 @@ body{
 }
 
 h1{
-    color: red;
+    color: white;
     font-family:MaPolice;
     text-align: center;
     font-size: 100PX;
+    background-image: url(/Images/pelouse.jpg);
     
 }
 
@@ -45,3 +46,5 @@ footer{
     color: black;
     font-family: MaPolice;
 }
+
+#black{width: 50%;height: 400px;}
