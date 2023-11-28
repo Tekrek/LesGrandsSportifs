@@ -6,6 +6,7 @@
 
 body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
+    background-size: cover;
     color: white;
     font-size: 50PX;
     font-family: MaPolice;

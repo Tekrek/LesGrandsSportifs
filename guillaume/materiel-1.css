@@ -4,11 +4,21 @@
     src: url(Agbalumo-Regular.ttf);
 }
 
+#titre-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
 h1{
     color: red;
     font-family:MaPolice;
     text-align: center;
-    font-size: 100PX;
+    font-size: 150px;
+    background-image: url(../Images/Titres.png);
+    background-size: cover;
+    width: 60%;
     
 }
 
@@ -17,13 +27,16 @@ h2{
     font-family:MaPolice;
     text-align: center;
     font-size: 70PX;
-    
+    background-image:url(../Images/terrain\ tennis.jpg);
+
 }
 
 body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
+    background-size: cover;
     color: white;
     font-size: 50PX;
+    font-family: MaPolice;
 }
 
 
@@ -34,7 +47,7 @@ body{
 }
 .abc{width: 10px;}
 
-.banière{width: 1192px;height: 400px;}
+.banière{width: 1192px;height: 250px;}
 
 #rechercher{
     font-family: MaPolice;
@@ -43,7 +56,7 @@ body{
 }
 
 .img{
-    height: 400px; width: 405px;
+    height: 400px; width: 400px;
 }
 .increase{width: 50px;height: 50px;}
 .checkbox{width: 30px;height: 30px;}
@@ -53,3 +66,10 @@ body{
 footer{
     display: flex; justify-content: space-around;
 }
+
+header{Display:flex;justify-content: space-around; background-image: url(../Images/pelouse.jpg);height: 200px; font-family: MaPolice;}
+
+a{color: white;}
+
+.ballon{height: 70px;W: 70px;}
+

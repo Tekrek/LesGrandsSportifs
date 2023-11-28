@@ -7,6 +7,7 @@ body{
     background-image:url(../Images/Capture\ d’écran\ 2023-11-15\ 094659.jpg);
     color: white;
     font-size: 50PX;
+    background-size: cover;
 }
 
 h1{
@@ -14,12 +15,12 @@ h1{
     font-family:MaPolice;
     text-align: center;
     font-size: 100PX;
-    
+    background-image:url(../Images/terrain\ tennis.jpg);
 }
 
 
-.top{width: 900px; height: 500px;}
-#top{justify-content: space-between;display: flex;}
+.top{width: 600px; height: 500px;}
+#top{justify-content: space-around;display: flex;}
 
 figcaption{font-family: MaPolice;color: yellow;text-align: center;}
 
@@ -37,11 +38,5 @@ footer{
     font-size: 40px;
 }
 
-#test-radius{
-    width: 900px;
-    height: 100px;
-    background-color: rgb(242, 255, 0);
-    text-align: center;
-    color: black;
-    font-family: MaPolice;
-}
+#black{width: 45%;height: 400px; display: flex; align-items: center;}
+
