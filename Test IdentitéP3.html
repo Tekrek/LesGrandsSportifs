@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Page mes repas.css"> <!-- Lien vers le fichier CSS -->
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="Test IdentitéP3.css">
+</head>
+
+<body>
+    <div id="image_de_fond">
+        <div class="feature"></div>
+    </div>
+
+    <header>En-tête</header>
+    <br>
+    <input type="button" id="accueil" value="Accueil">
+    <div class="page active" id="page1">
+        <h1>Identité</h1>
+        <p>Taille</p>
+        <select id="taille">
+            <option value="choix1">Votre taille</option>
+        </select>
+        <p>Sexe</p>
+        <select id="sexe">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select>
+        <p>Âge</p>
+        <select id="age">
+            <option value="age">Votre âge</option>
+        </select>
+        <p>Poids</p>
+        <select id="poids">
+            <option value="Poids">Votre poids</option>
+        </select>
+
+        <br>
+        <button id="retour" style="display: none;" onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
+
+    <div class="page" id="page2">
+        <h1>Votre objectif personnel</h1>
+        <select id="objectif_personnel">
+            <option value="Perte de poids">Perte de poids</option>
+            <option value="Prise de masse">Prise de masse</option>
+            <option value="Maintien de forme">Maintien de forme</option>
+            <option value="Sèche">Sèche</option>
+        </select>
+        <br>
+        <button id="retour" ; onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
+
+    <div class="page" id="page3">
+        <h1>Vos besoins caloriques journaliers</h1>
+        <select id="besoins_caloriques" onchange="handleBesoinsCaloriques()">
+            <option value="choix1" selected> </option>
+            <option value="choix2">Je les connais</option>
+            <option value="choix3">Je les calcule</option>
+        </select>
+        <div id="je_les_connais">
+            <h2>Vos besoins :</h2>
+            <table id="Tableau_vos_besoins">
+                <tr>
+                    <td>Glucides</td>
+                    <td><input type="text" id="donnée_glucides" placeholder="(en grammes/jour)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lipides</td>
+                    <td><input type="text" id="donnée_lipides" placeholder="(en grammes/jour)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Protéines</td>
+                    <td><input type="text" id="donnée_protéines" placeholder="(en grammes/jour)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td><input type="text" id="donnée_calories" placeholder="(en kcal/jour)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="je_les_calcule" class="tableau_besoins_caloriques">
+            <p>Votre fréquence sportive hebdomadaire:</p>
+            <select id="options_je_les_calcule" onchange="showPourcentages()" style="display: none;">
+                <!-- Options supplémentaires ici -->
+                <option value="choixA">Peu ou pas d'exercice/sport par semaine</option>
+                <option value="choixB">1 ou 2 séance(s) d'exercices/sport par semaine</option>
+                <option value="choixC">Entre 3 et 5 séances d'exercices/sport par semaine</option>
+                <option value="choixD">Entre 6 et 7 séances d'exercices/sport par semaine</option>
+                <option value="choixE">>7 séances d'exercices/sport par semaine</option>
+            </select>
+            <p>Votre pourcentage:</p>
+            <select id="pourcentages" class="options_pourcentages" style="display: none;">
+                <!-- Options supplémentaires ici -->
+                <option value="choix1">5%</option>
+                <option value="choix2">10%</option>
+                <option value="choix3">15%</option>
+                <option value="choix4">20%</option>
+                <option value="choix5">25%</option>
+            </select>
+            <p id="resultatIMG"></p>
+            <p id="resultatMaintenance"></p>
+        </div>
+        <br>
+        <button id="retour" ; onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
+
+   
+            <!-- <span class="info-icon">
+                <img src="Infobulle_pomme.png" alt="(i)" width="16" height="16">
+                <span class="tooltip">Vos besoins caloriques quotidiens seront divisés sur la journée en fonction des
+                    repas choisis</span>
+            </span> -->
+
+    <div class="page" id="page4">
+        <h1>Résumé de vos informations :</h1>
+        <p>IMG :</p>
+        <p>Objectif : <span id="infoobjectif_personnel"></span> </p>
+        <p><span id="infodonnée_protéines"></span>g/jour de protéines <br>
+            <span id="infodonnée_glucides"></span>g/jour de glucides <br>
+            <span id="infodonnée_lipides"></span>g/jour de lipides <br>
+            <br>
+            Pour <span id="infodonnée_calories"></span>calories par jour<br>
+            A répartir en <span id="infomon_menu"></span>
+        </p>
+        <p>Restrictions alimentaires : X,X,X </p>
+
+        <button onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Générer mon repas</button>
+    </div>
+
+    <script src="Test IdentitéP3.js"></script>
+</body>
+
+</html>

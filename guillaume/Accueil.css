@@ -31,7 +31,8 @@ figcaption{text-align:center}
 
 .accueil{display: flex; justify-content: space-around;}
 .img{
-    width: 1840px;height: 1000px;
+    width: 1840px;
+    height: 1000px;
 }
 .img2{
     width: 3680px;
