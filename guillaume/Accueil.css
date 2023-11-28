@@ -29,7 +29,7 @@ body{
 
 figcaption{text-align:center}
 
-.accueil{display: flex; justify-content: space-around;}
+.accueil{display: flex; justify-content: space-between;}
 .img{
     width: 1840px;height: 1000px;
 }
@@ -74,3 +74,7 @@ footer{
 }
 
 .im{width: 200px;height: 150px;}
+
+#logo{
+    height: 200px;
+}

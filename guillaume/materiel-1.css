@@ -4,13 +4,6 @@
     src: url(Agbalumo-Regular.ttf);
 }
 
-#titre-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-
 h1{
     color: red;
     font-family:MaPolice;
@@ -67,7 +60,7 @@ footer{
     display: flex; justify-content: space-around;
 }
 
-header{Display:flex;justify-content: space-around; background-image: url(../Images/pelouse.jpg);height: 200px; font-family: MaPolice;}
+header{display:flex;justify-content: space-around; background-image: url(../Images/pelouse.jpg);height: 200px; font-family: MaPolice;}
 
 a{color: white;}
 

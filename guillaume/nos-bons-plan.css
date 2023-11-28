@@ -38,5 +38,5 @@ footer{
     font-size: 40px;
 }
 
-#black{width: 45%;height: 400px; display: flex; align-items: center;}
+#black{width: 45%;height: 400px; display: flex; justify-content: center;}
 
