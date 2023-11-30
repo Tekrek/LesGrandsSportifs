@@ -20,7 +20,7 @@
         <a href="">Panier</a>
         <a href="Test accueil.html"><img src="/Toute_les_images/LOGO_removed_bg.png" width="70" height="80"></a>
     </header>
-<br>
+    <br>
 
     <a href="Test accueil.html"><input type="button" id="accueil" value="Accueil"></a>
 
@@ -60,6 +60,7 @@
         </select>
 
         <br>
+        <br>
         <button id="retour" style="display: none;" onclick="previousPage()">Retour</button>
         <button onclick="nextPage()">Suivant</button>
     </div>
@@ -72,6 +73,7 @@
             <option value="Maintien de forme">Maintien de forme</option>
             <option value="Sèche">Sèche</option>
         </select>
+        <br>
         <br>
         <button id="retour" ; onclick="previousPage()">Retour</button>
         <button onclick="nextPage()">Suivant</button>
@@ -127,7 +129,17 @@
                 <option value="choixE">>7 séances d'exercices/sport par semaine</option>
             </select>
             <p>Votre pourcentage:</p>
-            <select id="pourcentages" class="options_pourcentages" style="display: none;">
+            <select id="pourcentages" class="options_pourcentages" onchange="showPourcentages()" style="display: none;"
+                title="Comment choisir mon multiplicateur ?
+                        Prise de masse : entre 5% et 10% recommandé
+                        Sèche et Perte de poids : entre 10% et 25%
+                        recommandé 
+                        
+                        Vous pouvez toujours choisir un pourcentage moins
+                        élevé et le modifier par la suite en fonction de votre
+                        ressenti et de l’évolution de vos besoins, objectifs et 
+                        impératifs ! ">
+
                 <!-- Options supplémentaires ici -->
                 <option value="choix1">5%</option>
                 <option value="choix2">10%</option>
@@ -137,7 +149,21 @@
             </select>
             <p id="resultatIMG"></p>
             <p id="resultatMaintenance"></p>
+            <p>
+                <span class="info-icon" id="infobulle">
+                    <img src="/Toute_les_images/Infobulle_pomme.png" alt="(i)" width="16" height="16">
+                    <span class="tooltip">La maintenance correspond à votre besoin calorique
+                        quotidien théorique pour garder un poids stable alité. <br>
+
+                        En fonction de votre objectif, votre fréquence sportive
+                        hebdomadaire souhaitée ou réelle, ainsi que votre
+                        multiplicateur d’activité vont modifier vos besoins
+                        caloriques quotidiens.<br><br>
+                    </span>
+                </span>
+            </p>
         </div>
+        <br>
         <br>
         <button id="retour" ; onclick="previousPage()">Retour</button>
         <button onclick="nextPage()">Suivant</button>
@@ -152,7 +178,7 @@
         <p><span id="infodonnée_glucides"></span>g/jour de glucides </p>
         <p><span id="infodonnée_lipides"></span>g/jour de lipides </p>
         <p>Pour <span id="infodonnée_calories"></span>calories par jour</p><br>
-
+        <br>
         <button onclick="previousPage()">Retour</button>
         <button onclick="nextPage()">Suivant</button>
     </div>
@@ -186,3 +212,22 @@
 </body>
 
 </html>
+
+
+<!-- La maintenance correspond à votre besoin calorique 
+quotidien théorique pour garder un poids stable alité. 
+
+En fonction de votre objectif, votre fréquence sportive
+hebdomadaire souhaitée ou réelle, ainsi que votre 
+multiplicateur d’activité vont modifier vos besoins 
+caloriques quotidiens.
+
+               Comment choisir mon multiplicateur ?
+Prise de masse : entre 5% et 10% recommandé
+Sèche et Perte de poids : entre 10% et 25% 
+recommandé
+
+Vous pouvez toujours choisir un pourcentage moins 
+élevé et le modifier par la suite en fonction de votre 
+ressenti et de l’évolution de vos besoins, objectifs et 
+impératifs ! -->
