@@ -8,7 +8,7 @@ body{
     background-image:url(../Images/9525a73dcfd017714cf7477ce601f558.jpeg);
     background-size: cover;
     color: white;
-    font-size: 50PX;
+    font-size: 20PX;
     font-family: MaPolice;
     text-align: center;
 }
@@ -17,13 +17,13 @@ h1{
     color: re;
     font-family: MaPolice;
     text-align: center;
-    font-size: 100PX;
+    font-size: 40PX;
     background-image: url(../Images/terrain\ tennis.jpg);
 }
 
 #test-radius{
-    width: 635px;
-    height: 100px;
+    width: 546px;
+    height: 35px;
     background-color: rgb(242, 255, 0);
     text-align: center;
     color: black;
@@ -40,22 +40,29 @@ footer{
     display: flex; justify-content: space-around;
 }
 
-.im{width: 200px;height: 150px;}
+.im{width: 60px;height: 60px;}
 
 #logo{
     height: 200px;
 }
+
 
 header{
     display:flex;
     justify-content: space-around; 
     align-items: center;
     background-image: url(../Images/pelouse.jpg);
-    height: 200px; 
+    height: 90px; 
     font-family: MaPolice;
-    font-size: 50px;
+    font-size: 13px;
 }
 
 a{color: white;}
 
-.ballon{height: 70px;W: 70px;}
+.ballon{height: 40px;width: 40px;}
+
+#logo{
+    height: 90px;
+}
+
+.spurs{height: 250px;width: 150px;}
