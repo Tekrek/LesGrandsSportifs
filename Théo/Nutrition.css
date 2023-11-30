@@ -28,7 +28,7 @@ h2 {
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 
@@ -79,7 +79,7 @@ body{
 }
 
 
-/*  A GARDER POUR UNE PAGE 
+ /* A GARDER POUR UNE PAGE  */
 
 .info-icon {
     position: relative;
@@ -106,7 +106,7 @@ body{
 .info-icon:hover .tooltip {
     visibility: visible;
     opacity: 1;
-} */
+}
 
 #page4 {
     text-align: center; /* Centre le texte */
@@ -212,7 +212,7 @@ input[type="radio"].demo2 {
   background-color: green; 
   font-size: 20px; 
   color: white;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 #Payer:hover {

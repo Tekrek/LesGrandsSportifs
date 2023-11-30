@@ -53,7 +53,7 @@ function FrequenceSportive() {
     var Pourcentages = document.getElementById("pourcentages");
 
     console.log({Pourcentages});
-    console.log(}||||||);
+    console.log({Frequence_sportive});
 
 
     if (Frequence_sportive.value === "ChoixA" || "ChoixB" || "ChoixC" || "ChoixD" || "ChoixE"){

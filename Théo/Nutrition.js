@@ -48,23 +48,12 @@ function showNextQuestion() {
         showCalculationSection(); // Appel de la fonction showCalculationSection ici
         calculerIMG(); // Appel de la fonction calculerIMG ici
         calculerMaintenance(); // Appel de la fonction calculerMaintenance ici
-        showCheckBoxes2()
     } else {
         jeLesConnais.style.display = "none";
         jeLesCalcule.style.display = "none";
     }
 }
 
-function showCheckboxes2() {
-    var select = document.getElementById("besoins_caloriques");
-    var additionalOptions2 = document.getElementById("additionalOptions2");
-    if (select.value === "choix3") {
-        additionalOptions2.style.display = "inline"; // Affiche la deuxième liste déroulante
-    } else {
-        additionalOptions2.style.display = "none"; // Cache la deuxième liste déroulante pour les autres options
-
-    }
-}
 
 function calculerIMG() {
     // Récupérer les valeurs depuis les éléments HTML
@@ -111,30 +100,32 @@ function calculerIMG() {
         coefSeance = 1.0; // Valeur par défaut si la fréquence sportive n'est pas sélectionnée
     }
 
-    if (multiplicateur === "choixA") {
+    if (multiplicateur === "choix1") {
         coefMultiplicateur = 1.05;
-    } else if (multiplicateur === "choixB") {
+    } else if (multiplicateur === "choix2") {
         coefMultiplicateur = 1.1;
-    } else if (multiplicateur === "choixC") {
+    } else if (multiplicateur === "choix3") {
         coefMultiplicateur = 1.15;
-    } else if (multiplicateur === "choixD") {
+    } else if (multiplicateur === "choix4") {
         coefMultiplicateur = 1.2;
-    } else if (multiplicateur === "choixE") {
+    } else if (multiplicateur === "choix5") {
         coefMultiplicateur = 1.25;
     } else {
         coefMultiplicateur = 1.0; // Valeur par défaut si le multiplicateur n'est pas sélectionné
     }
 
     // Calcul de l'IMG
-    const img = (1.20 * (poidsEnKg / (tailleEnMetres * tailleEnMetres))) + (0.23 * âge) - (10.8 * coefSexeimg) - 5.4;
+    const img = (1.20 * (poidsEnKg / (tailleEnMetres ** 2))) + (0.23 * âge) - (10.8 * coefSexeimg) - 5.4;
 
     // Calcul de la maintenance
     const maintenance = ((coefPoids * poidsEnKg) + (coefTaille * tailleEnMetres) - (coefAge * âge) + coefSexe) * coefSeance * coefMultiplicateur;
 
-
+    console.log('A', img);
+    console.log('B', maintenance);
+    console.log(coefMultiplicateur);
     // Affichage des résultats
     document.getElementById("resultatIMG").textContent = `Votre IMG est de : ${img.toFixed(2)}`;
-    document.getElementById("resultatMaintenance").textContent = `Votre maintenance est de : ${maintenance.toFixed(2)}`;
+    document.getElementById("resultatMaintenance").textContent = `Votre maintenance est de : ${maintenance.toFixed(2)} `;
 }
 
 
@@ -163,7 +154,7 @@ function handleBesoinsCaloriques() {
         jeLesConnais.style.display = "none";
         jeLesCalcule.style.display = "block";
         showJeLesCalculeOptions();
-        showPourcentages();
+        // showPourcentages();
         calculerIMG();
         calculerMaintenance();
     } else {
@@ -178,6 +169,7 @@ function showJeLesCalculeOptions() {
 }
 
 function showPourcentages() {
+    console.log('showPourcentages         1')
     var optionsPourcentagesSelect = document.getElementById("pourcentages");
     optionsPourcentagesSelect.style.display = "inline";
 }
@@ -201,12 +193,17 @@ const selectElement = document.getElementById("options_je_les_calcule");
 selectElement.addEventListener("change", updateMaintenance);
 
 function showPourcentages() {
+    console.log('showPourcentages         >2')
+
     const selectElement = document.getElementById("options_je_les_calcule");
     const pourcentages = document.getElementById("pourcentages");
 
     // Vérifie si "je_les_calcule" a une option parmi "choixA" à "choixE" et affiche "pourcentages" en conséquence
     if (selectElement.value === "choixA" || selectElement.value === "choixB" || selectElement.value === "choixC" || selectElement.value === "choixD" || selectElement.value === "choixE") {
         pourcentages.style.display = "inline";
+        calculerIMG(); // Appel de la fonction calculerIMG ici
+        calculerMaintenance();
+
     } else {
         pourcentages.style.display = "none";
     }
@@ -217,33 +214,33 @@ function showPourcentages() {
 function openModal() {
     var modal = document.getElementById("myModal");
     var modalContent = document.querySelector(".modal-content");
-  
+
     // Effet d'apparition progressive avec une transition de 2 secondes
     modal.style.display = "block";
-  
+
     modalContent.style.opacity = 0;
     setTimeout(function () {
-      modalContent.style.opacity = 1;
+        modalContent.style.opacity = 1;
     }, 10);
-  }
-  
-  
-  // Fonction pour fermer la fenêtre modale
-  function closeModal() {
+}
+
+
+// Fonction pour fermer la fenêtre modale
+function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
-  }
-  
-  // Attachez ces fonctions à votre bouton "submit"
-  var submitButton = document.getElementById("submit");
-  submitButton.addEventListener("click", function () {
+}
+
+// Attachez ces fonctions à votre bouton "submit"
+var submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", function () {
     var suivipersonnaliseRadio = document.getElementById("demo2-a");
     var nosprogrammesRadio = document.getElementById("demo2-b");
-  
+
     if (suivipersonnaliseRadio.checked) {
-      openModal();
+        openModal();
     } else if (nosprogrammesRadio.checked) {
-      window.location.href = "ProgrammeP1.html";
+        window.location.href = "ProgrammeP1.html";
     }
-  });
-  
+});
+
