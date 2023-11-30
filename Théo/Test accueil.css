@@ -84,12 +84,18 @@ header a {
     border-radius: 10px;
     filter: brightness(80%);
     background-size: cover;
+    overflow: hidden;
     
 }
 
+#conteneur1 #sous_conteneur1_1{
+    margin-left: 100%;
+    transition: 1s;
+}
 #conteneur1:hover #sous_conteneur1_1{
-    animation-duration: 1s;
-    animation-name: slidein;
+    margin-left: 0%;
+    /* animation-duration: 1s;
+    animation-name: slidein; */
     visibility: visible;
     color: black;
     font-size: large;

@@ -1,60 +1,269 @@
+<!-- Vérifier <script> pour taille etc pour voir si l'erreur vient de là -->
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Identité</title>
-        <link rel="stylesheet" href="Nutrition.css"> 
-    </head>
-    <body>
-        <h1>Mes informations nutritionnelles</h1>
-        <h2>P1: Identité</h2>
-            <p>Taille, âge, sexe, poids</p>
-            <h1>Identité</h1>
-            <p>Taille</p>
-            <select id="taille">
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Nutrition.css"> <!-- Lien vers le fichier CSS -->
+    <title>Identité</title>
+
+</head>
+
+<body>
+    <div id="image_de_fond">
+        <div class="feature"></div>
+    </div>
+    <header>
+        <a href="#Menu_Equipement">Equipements</a>
+        <a href="ProgrammeP1.html">Programmes</a>
+        <a href="/Théo/Nutrition.html" id="Commencer">Identité</a>
+        <a href="">Panier</a>
+        <a href=""></a>
+    </header>
+<br>
+
+    <a href="Test accueil.html"><input type="button" id="accueil" value="Accueil"></a>
+
+    <div class="page active" id="page1">
+        <h1>Identité</h1>
+        <p>Taille</p>
+        <select id="taille">
             <option value="choix1">Votre taille</option>
             <script>
-           /* <script> for (let i = 60; i <= 250; i++) {
-                document.write(`<option value="${i}">${i} cm</option>`);
-            }
-            /*
-        </script>
-            </select>
+                for (let i = 60; i <= 250; i++) {
+                    document.write(`<option value="${i}">${i} cm</option>`);
+                }
+            </script>
+        </select>
         <p>Sexe</p>
         <select id="sexe">
-            <option value="Homme">Homme</option>
-            <option value="Femme">Femme</option>
+            <option value="choix1">Homme</option>
+            <option value="choix2">Femme</option>
         </select>
         <p>Âge</p>
         <select id="âge">
-            <option value="Age">Votre âge</option>
-        <script>
-            /* for (let age = 15; age <= 99; age++) {
-                document.write(`<option value="${age}">${age} ans</option>`);
-            } /*
-        </script>
-    </select>
+            <option value="choix1">Votre âge</option>
+            <script>
+                for (let age = 15; age <= 99; age++) {
+                    document.write(`<option value="${age}">${age} ans</option>`);
+                }
+            </script>
+        </select>
         <p>Poids</p>
         <select id="poids">
-            <option value="Poids">Votre poids</option>
-        <script>
-            /* for (let poids = 30; poids <= 150; poids++) {
-                document.write(`<option value="${poids}">${poids} kg</option>`);
-            } /*
-        </script>
+            <option value="choix1">Votre poids</option>
+            <script>
+                for (let poids = 30; poids <= 150; poids++) {
+                    document.write(`<option value="${poids}">${poids} kg</option>`);
+                }
+            </script>
         </select>
 
+        <br>
+        <button id="retour" style="display: none;" onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
 
-    <h2>P2: Objectif personnel</h2>
-        <label for="Objectif_personnel">Mon objectif physique:</label><br>
-            <select id="Objectif_personnel" name="Objectif_personnel">
-                <option value="Prise de masse" selected>Prise de masse</option>
-                <option value="Perte de poids">Perte de poids</option>
-                <option value="Sèche">Sèche</option>
-            </select><br>
-        <p>Dès que sélectionné, demander poids voulu</p>
+    <div class="page" id="page2">
+        <h1>Votre objectif personnel</h1>
+        <select id="objectif_personnel">
+            <option value="Perte de poids">Perte de poids</option>
+            <option value="Prise de masse">Prise de masse</option>
+            <option value="Maintien de forme">Maintien de forme</option>
+            <option value="Sèche">Sèche</option>
+        </select>
+        <br>
+        <button id="retour" ; onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
 
-        <label for="Objectif_temporel">Mon objectif temporel:</label>
-     </body>
+    <div class="page" id="page3">
+        <h1>Vos besoins caloriques journaliers</h1>
+        <select id="besoins_caloriques" onchange="handleBesoinsCaloriques()">
+            <option value="choix1" selected> </option>
+            <option value="choix2">Je les connais</option>
+            <option value="choix3">Je les calcule</option>
+        </select>
+        <div id="je_les_connais" style="display: none; text-align: center; color: white;">
+            <h2>Vos besoins :</h2>
+            <table style="margin: 0 auto; background-color: transparent;">
+                <tr>
+                    <td>Glucides</td>
+                    <td><input type="text" id="donnée_glucides" placeholder="(en grammes/jour)"
+                            style="color: white; background-color: transparent" ;>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lipides</td>
+                    <td><input type="text" id="donnée_lipides" placeholder="(en grammes/jour)"
+                            style="color: white; background-color: transparent" ;>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Protéines</td>
+                    <td><input type="text" id="donnée_protéines" placeholder="(en grammes/jour)"
+                            style="color: white; background-color: transparent" ;>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td><input type="text" id="donnée_calories" placeholder="(en kcal/jour)"
+                            style="color: white; background-color: transparent" ;>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="je_les_calcule" class="tableau_besoins_caloriques"
+            style="display: none; text-align: center; color: white;">
+            <p>Votre fréquence sportive hebdomadaire:</p>
+            <select id="options_je_les_calcule" onchange="showPourcentages()" style="display: none;">
+                <!-- Options supplémentaires ici -->
+                <option value="choixA">Peu ou pas d'exercice/sport par semaine</option>
+                <option value="choixB">1 ou 2 séance(s) d'exercices/sport par semaine</option>
+                <option value="choixC">Entre 3 et 5 séances d'exercices/sport par semaine</option>
+                <option value="choixD">Entre 6 et 7 séances d'exercices/sport par semaine</option>
+                <option value="choixE">>7 séances d'exercices/sport par semaine</option>
+            </select>
+            <p>Votre pourcentage:</p>
+            <select id="pourcentages" class="options_pourcentages" style="display: none;">
+                <!-- Options supplémentaires ici -->
+                <option value="choix1">5%</option>
+                <option value="choix2">10%</option>
+                <option value="choix3">15%</option>
+                <option value="choix4">20%</option>
+                <option value="choix5">25%</option>
+            </select>
+            <p id="resultatIMG"></p>
+            <p id="resultatMaintenance"></p>
+        </div>
+        <br>
+        <button id="retour" ; onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
+
+
+    <div class="page" id="page4">
+        <h1>Résumé de vos informations :</h1>
+        <p>Mon IMG :</p>
+        <p>Objectif : <span id="infoobjectif_personnel"></span> </p>
+        <p><span id="infodonnée_protéines"></span>g/jour de protéines </p>
+        <p><span id="infodonnée_glucides"></span>g/jour de glucides </p>
+        <p><span id="infodonnée_lipides"></span>g/jour de lipides </p>
+        <p>Pour <span id="infodonnée_calories"></span>calories par jour</p><br>
+
+        <button onclick="previousPage()">Retour</button>
+        <button onclick="nextPage()">Suivant</button>
+    </div>
+
+    <div class="page" id="page5">
+
+        <h1>Votre programme sportif :</h1>
+        <br>
+        <br>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-img" src="/Toute_les_images/Pop-up.png" alt="Pop-up">
+                <form>
+                    <button id="Payer" formaction="https://billetterie.losc.fr/fr/">45€/an</button>
+                </form>
+            </div>
+        </div>
+
+        <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a" checked>
+        <label for="demo2-a">Suivi personnalisé</label>
+
+        <input type="radio" name="demo2" class="demo2 demono" id="demo2-b">
+        <label for="demo2-b">Nos programmes</label>
+        <br>
+        <br>
+        <input type="button" id="submit" value="Go !">
+
+        <!-- 
+        <h1>Mes repas</h1>
+    <p>Générer repas</p>
+<br>
+<div class="sidebar">
+    <br>
+    <br>
+    <br>
+        <div class="menu" style="background-color: transparent;"><span>Mon historique de repas</span></div>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="menu" style="background-color: transparent;"><span>Menu 1</span></div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <div class="menu" style="background-color: transparent;"><span>Menu 2</span></div>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="menu" style="background-color: transparent;"><span>Menu 3</span></div>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="menu" style="background-color: transparent;"><span>Menu 4</span></div>
+    </div>
+    <button onclick="previousPage()">Retour</button>
+    <button onclick="nextPage()">Voir options</button>
+</div>
+<div class="page" id="page8">
+        <h1>Mes options</h1>
+            <p>Remettre menu précédent (sans détails)</p>
+<div class="sidebar">
+    <br>
+    <br>
+    <p>Je commande sur UberEats</p>
+    <br>
+    <br>
+    <br>
+    <br>
+<label class="mes_options">
+        <input type="checkbox" name="option1" value="Option 1" style="vertical-align: middle; margin-right: 5px; color: white;">Oui
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+<label class="mes_options">
+        <input type="checkbox" name="option2" value="Option 2" style="vertical-align: middle; margin-right: 5px; color: white;">Me le rappeler plus tard 
+    </label>
+</div>
+<div class="sidebar_Drive">
+    <br>
+    <br>
+    <p>J'ajoute à mon panier Leclerc </p>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+<label class="mes_options">
+        <input type="checkbox" name="option3" value="Option 3" style="vertical-align: middle; margin-right: 5px; color: white;">Oui
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+<label class="mes_options">
+        <input type="checkbox" name="option4" value="Option 4" style="vertical-align: middle; margin-right: 5px; color: white;">Me le rappeler plus tard
+    </label>
+</div>
+<button onclick="previousPage()">Retour</button>
+<button onclick="nextPage()">Passer cette étape</button>
+<br>
+<button onclick="submitForm()">Soumettre</button>
+</div> -->
+
+        <script src="Nutrition.js" type="text/javascript"></script>
+</body>
+
 </html>

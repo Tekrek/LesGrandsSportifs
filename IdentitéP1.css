@@ -6,8 +6,9 @@ h2 {
 }
 
 header {
-    background-color: #bc4749;
-    filter: ;
+    background-color: transparent;
+    border: solid 2px black ;
+    /* filter: ; */
     height: 10vh;
     width: 100%;
     display: flex;
