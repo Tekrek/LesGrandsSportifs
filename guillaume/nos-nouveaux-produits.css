@@ -15,6 +15,7 @@ h1{
     font-family:MaPolice;
     text-align: center;
     font-size: 100PX;
+    background-image: url(../Images/terrain\ tennis.jpg);
     
 }
 
@@ -38,4 +39,26 @@ footer{
     font-size: 40px;
 }
 
+header{
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-image: url(../Images/pelouse.jpg);
+    height: 200px; 
+    font-family: MaPolice;
+    font-size: 50px;
+}
 
+a{color: white;}
+
+footer{
+    display: flex; justify-content: space-around;
+}
+
+.im{width: 200px;height: 150px;}
+
+#logo{
+    height: 200px;
+}
+
+.ballon{height: 70px;W: 70px;}

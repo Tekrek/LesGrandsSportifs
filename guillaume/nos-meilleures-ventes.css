@@ -36,3 +36,21 @@ footer{
 #quantités{
     font-size: 40px;
 }
+
+header{
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-image: url(../Images/pelouse.jpg);
+    height: 200px; 
+    font-family: MaPolice;
+    font-size: 50px;
+}
+
+a{color: white;}
+
+.ballon{height: 70px;W: 70px;}
+
+#logo{
+    height: 200px;
+}

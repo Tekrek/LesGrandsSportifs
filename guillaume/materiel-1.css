@@ -9,9 +9,7 @@ h1{
     font-family:MaPolice;
     text-align: center;
     font-size: 150px;
-    background-image: url(../Images/Titres.png);
-    background-size: cover;
-    width: 60%;
+    background-image: url(../Images/terrain\ tennis.jpg);
     
 }
 
@@ -60,9 +58,20 @@ footer{
     display: flex; justify-content: space-around;
 }
 
-header{display:flex;justify-content: space-around; background-image: url(../Images/pelouse.jpg);height: 200px; font-family: MaPolice;}
+header{
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-image: url(../Images/pelouse.jpg);
+    height: 200px; 
+    font-family: MaPolice;
+    font-size: 50px;
+}
 
 a{color: white;}
 
 .ballon{height: 70px;W: 70px;}
 
+#logo{
+    height: 200px;
+}
