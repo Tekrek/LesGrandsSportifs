@@ -84,12 +84,18 @@ header a {
     border-radius: 10px;
     filter: brightness(80%);
     background-size: cover;
+    overflow: hidden; /* Sur un élément avec animation ou dont la surface est supérieur au conteneur dans lequel l'élément est, le thème "overflow" permet de cacher tout ce qui a d'extérieur au conteneur parent. Dans le cas présent, le bloc transparent "Découvrez-les ici!" est donc posté à l'extérieur de l'image et l'animation + "overflow" l'affiche en animation. Breeeeeeef */
     
 }
 
+#conteneur1 #sous_conteneur1_1{
+    margin-left: 100%;
+    transition: 1s;
+}
 #conteneur1:hover #sous_conteneur1_1{
-    animation-duration: 1s;
-    animation-name: slidein;
+    margin-left: 0%;
+    /* animation-duration: 1s;
+    animation-name: slidein; */
     visibility: visible;
     color: black;
     font-size: large;
