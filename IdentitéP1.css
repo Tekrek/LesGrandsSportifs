@@ -6,14 +6,20 @@ h2 {
 }
 
 header {
+    background-color: #bc4749;
+    filter: ;
+    height: 10vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: green;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+}
+
+header a {
     color: white;
-    width: cover;
-    height: 50px;
-    font-size: 30px;
+    text-decoration: none;
 }
 
 body{
