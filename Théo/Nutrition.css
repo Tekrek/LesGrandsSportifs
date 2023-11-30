@@ -6,8 +6,23 @@
     z-index: -1;
     background-attachment: fixed;
     background-size: cover;
-    filter: brightness(80%);
 }
+
+
+.feature {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+/* #image_de_fond {
+  background-image: url("Toute_les_images/MicrosoftTeams-image\ \(18\).png");
+  width: 100%;
+  height: 118vh;
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+  background-size: cover;
+} */
 
 h2 {
     display: flex;
@@ -41,6 +56,7 @@ body{
     padding: 0;
     text-align: center;
     color: white;
+    background-color: black;
 }
 
 

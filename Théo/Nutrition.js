@@ -243,7 +243,7 @@ function openModal() {
     if (suivipersonnaliseRadio.checked) {
       openModal();
     } else if (nosprogrammesRadio.checked) {
-      window.location.href = "/Théo/Test accueil.html";
+      window.location.href = "ProgrammeP1.html";
     }
   });
   
