@@ -1,0 +1,158 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    width: cover;
+    height: 50px;
+    font-size: 30px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#image_de_fond {
+    background-image: url("Toute_les_images/MicrosoftTeams-image\ \(18\).png");
+    width: 100%;
+    height: 118vh;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.feature {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Fin du copier-coller du css identité */
+/* Rectifications faites main : */
+
+#je_les_connais, #je_les_calcule {
+    display: none;
+    text-align: center;
+    color: white;
+}
+
+#Tableau_vos_besoins {
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+#donnée_glucides, #donnée_lipides, #donnée_protéines, #donnée_calories {
+    color: white;
+    background-color: transparent;
+}
+
+/* Fin rectifications faites main */
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.mon_menu {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.mon_menu input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.info-icon {
+    position: relative;
+    font-size: 14px;
+}
+
+.info-icon .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    left: 100%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.info-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#page6 {
+    text-align: center;
+    /* Centre le texte */
+
+}
+
+#page6 h1 {
+    text-align: center;
+    /* Centre le texte */
+
+}
+
+#page6 p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+#page8 p,
+label {
+    text-align: center;
+    color: white;
+}
+
+.sidebar {
+    width: 150px;
+    /* Largeur de la barre latérale gauche */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #fff;
+}
+
+.sidebar_Drive {
+    width: 150px;
+    /* Largeur de la barre latérale droite */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* Barre latérale à droite */
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #fff;
+}
