@@ -125,7 +125,7 @@ const displayArticles = (fruits) => {
 
     fruits.map(fruit => {
         const lienDetailFruit = document.createElement("a");
-        lienDetailFruit.href = `detailFruit.html?nom=${fruit.nom}`
+        lienDetailFruit.href = `maillot-spurs.html?nom=${fruit.nom}`
         const card = document.createElement("article");
         const image = document.createElement("img");
         image.src = fruit.image;

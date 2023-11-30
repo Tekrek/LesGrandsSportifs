@@ -20,7 +20,7 @@ h1{
 }
 
 
-.top{width: 150px; height: 150px;}
+.top{width: 200px; height: 200px;}
 #top{justify-content: space-around;display: flex;}
 
 figcaption{font-family: MaPolice;color: yellow;text-align: center;}
