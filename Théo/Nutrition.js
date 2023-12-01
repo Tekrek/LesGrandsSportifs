@@ -125,7 +125,7 @@ function calculerIMG() {
     console.log(coefMultiplicateur);
     // Affichage des résultats
     document.getElementById("resultatIMG").textContent = `Votre IMG est de : ${img.toFixed(2)}`;
-    document.getElementById("resultatMaintenance").textContent = `Votre maintenance est de : ${maintenance.toFixed(2)} `;
+    document.getElementById("resultatMaintenance").textContent = `Votre maintenance est de : ${maintenance.toFixed(2)} kcal quotidiennes à consommer`;
 }
 
 
