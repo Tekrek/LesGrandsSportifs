@@ -90,26 +90,26 @@ const fruits2 = [
 
     {
         nom: "Lot de 40 coupelles",
-        prix: 8.5,
+        prix: 3,
         image: "lot_40_coupelles_avec_support.png"
     },
 
     {
         nom: "Machine multistation",
-        prix: 8.5,
+        prix: 99,
         image: "machine-multistation-musculation.png"
     },
 
     {
         nom: "2 Haltères vert pomme 2kg",
-        prix: 8.5,
+        prix: 15.5,
         image: "haltères.png"
     },
 
 
     {
         nom: "Basket running / trail",
-        prix: 8.5,
+        prix: 9,
         image: "basket_trail.png"
     },
 
