@@ -63,6 +63,10 @@ header a {
     left: 400px;
 }
 
+#carré a:visited{
+    color: black;
+}
+
 /* 
 #Programme {
     position: absolute;
@@ -168,8 +172,8 @@ header a {
     margin-left: 70%;
     margin-bottom: 100px;
     margin-top: 80px;
+    font-weight: bold;
 }
-
 
 #Menu_Equipement {
     display: flex;
@@ -244,6 +248,7 @@ header a {
     position: relative;
     /* border: solid 2px white; */
     height: 80vh;
+    font-size: 20px;
 }
 
 .container2 {
