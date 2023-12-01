@@ -62,6 +62,7 @@ header a {
     border-radius: 50px;
     left: 400px;
 }
+
 /* 
 #Programme {
     position: absolute;
@@ -84,7 +85,7 @@ header a {
     border-radius: 10px;
     filter: brightness(80%);
     background-size: cover;
-    overflow: hidden; /* Sur un élément avec animation ou dont la surface est supérieur au conteneur dans lequel l'élément est, le thème "overflow" permet de cacher tout ce qui a d'extérieur au conteneur parent. Dans le cas présent, le bloc transparent "Découvrez-les ici!" est donc posté à l'extérieur de l'image et l'animation + "overflow" l'affiche en animation. Breeeeeeef */
+    overflow: hidden; /* Sur un élément avec animation ou dont la surface est supérieur au conteneur dans lequel l'élément est, le thème "overflow" permet de cacher tout ce qui a d'extérieur au conteneur parent. Dans le cas présent, le bloc transparent "Découvrez-les ici!" est donc posté à l'extérieur de l'image et l'animation + "overflow" l'affiche en animation. Breeeeeeef ça rend inutile le "keyframe" du coup. */
     
 }
 
@@ -104,7 +105,7 @@ header a {
 
 }
 
-
+/* 
 @keyframes slidein {
     from {
       margin-left: 100%;
@@ -115,7 +116,7 @@ header a {
       margin-left: 0%;
       width: 100%;
     }
-  }
+  } */
 
 #sous_conteneur1_1 {
     content: " ";
@@ -183,6 +184,7 @@ header a {
     background: #FFFEFE;
     border-radius: 5px;
     border: solid 2px black;
+    text-decoration: black;
 }
 
 #Menu_Panier {
